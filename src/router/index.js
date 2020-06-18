@@ -7,6 +7,10 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: '/',
+    redirect: '/login'
+  },
+  {
     path: '/login',
     component: Login
   },
@@ -30,13 +34,11 @@ router.beforeEach((to, from, next) => {
     return next()
   }
 
-  // ------------------------------------
   // 从sessionStorage 中获取到 保存的 token值
   const tokenStr = window.sessionStorage.getItem('token')
   if (!tokenStr) {
     return next('/login')
   }
-  // ------------------------------------
   next()
 })
 

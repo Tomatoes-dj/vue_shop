@@ -1,6 +1,7 @@
 module.exports = {
-  root: true,
+  root: true, // 此项是用来告诉eslint找当前配置文件不能往父级查找
   env: {
+    // 环配置 如 "browser": true, node: true,
     node: true
   },
   extends: ['plugin:vue/essential', '@vue/standard'],
@@ -15,4 +16,4 @@ module.exports = {
     camelcase: 0, // 强制驼峰法命名
     'no-unused-vars': 0
   }
-}
+};
