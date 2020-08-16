@@ -15,5 +15,6 @@ module.exports = {
     'space-before-function-paren': 0,
     camelcase: 0, // 强制驼峰法命名
     'no-unused-vars': 0
+    // 'no-unused-vars': [2, { vars: 'all', args: 'after-used' }]
   }
-};
+}
