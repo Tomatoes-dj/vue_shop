@@ -100,7 +100,7 @@ export default {
       const { data: res } = await this.$http.get('menus') // 因为返回值是一个promise 所以使用async简化操作
       if (res.meta.status !== 200) return this.$message.error(res.meta.msg)
       this.menulist = res.data
-      console.log(res)
+      // console.log(res)
       // console.log(this.iconsObj)
       // window.sessionStorage.setItem('activePath', '/users')
       // console.log(this.activePath)
