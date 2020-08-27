@@ -369,7 +369,7 @@ export default {
     },
     // 监听修改分类对话框的关闭事件，重置对话框
     editCateDialogClosed() {
-      this.$refs.addCateFormRef.resetFields()
+      this.$refs.editCateFormRef.resetFields()
     },
     // 修改分类,进行预验证
     editCate() {
