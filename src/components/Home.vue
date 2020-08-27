@@ -6,7 +6,10 @@
         <img src="../assets/heima.png" />
         <span>电商后台管理系统</span>
       </div>
-      <el-button type="info" @click="Exit">退出</el-button>
+      <el-button
+        type="info"
+        @click="Exit"
+      >退出</el-button>
     </el-header>
     <!-- 页面主体 -->
     <el-container>
@@ -14,7 +17,10 @@
       <el-aside :width="isCollapse ? '64px' : '200px'">
         <!-- 侧边栏菜单区域 -->
         <!-- :unique-opened="true"  不加冒号 则true则为字符串，加冒号则为boolean /或者只写unique-opened，表示将它设置为true-->
-        <div class="toggle-button" @click="toggleCollapse">|||</div>
+        <div
+          class="toggle-button"
+          @click="toggleCollapse"
+        >|||</div>
         <el-menu
           background-color="#333744"
           text-color="#fff"
@@ -27,7 +33,11 @@
         >
           <!-- 一级菜单 -->
           <!-- index="item.id"  index 如果一样的话会造成点击一个全部展开 -->
-          <el-submenu :index="item.id + ''" v-for="item in menulist" :key="item.id">
+          <el-submenu
+            :index="item.id + ''"
+            v-for="item in menulist"
+            :key="item.id"
+          >
             <!-- 一级菜单模版 -->
             <template slot="title">
               <!-- 图标 -->

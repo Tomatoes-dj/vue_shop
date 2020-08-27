@@ -21,3 +21,11 @@ body,
 .el-pagination {
   margin-top: 15px;
 }
+
+/* 级联选择器 没有滚动条 */
+.el-cascader-menu__wrap {
+  height: 200px;
+}
+/* .el-cascader-panel {
+  height: 200px;
+} */
