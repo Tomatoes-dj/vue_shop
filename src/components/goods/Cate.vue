@@ -133,7 +133,6 @@
             :options="parentCateList"
             :props="cascaderProps"
             @change="parentCateChanged"
-            collapse-tags
             clearable
             filterable
           ></el-cascader>
