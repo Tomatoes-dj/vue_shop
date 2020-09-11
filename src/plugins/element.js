@@ -1,4 +1,5 @@
 import Vue from 'vue'
+
 import {
   Button,
   Form,
@@ -38,7 +39,8 @@ import {
   CheckboxGroup,
   Upload
 } from 'element-ui'
-
+import Timeline from './timeline/index.js'
+import TimelineItem from './timeline-item/index.js'
 Vue.use(Button)
 Vue.use(Form)
 Vue.use(FormItem)
@@ -74,6 +76,8 @@ Vue.use(Step)
 Vue.use(Checkbox)
 Vue.use(CheckboxGroup)
 Vue.use(Upload)
+Vue.use(Timeline)
+Vue.use(TimelineItem)
 
 // this.$message  this为Vue的实例  需要将message挂载到vue的实例
 Vue.prototype.$message = Message
